@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahiwe Chibuike | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ahiwe Chibuike</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Ahiwe Chibuike, a passionate frontend developer skilled in HTML, CSS, and JavaScript.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Here are some of my featured projects:</p>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Brief description of the project...
+                its a website that features a simple calculator. It allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division. The calculator has a user-friendly interface with buttons for numbers and operations, making it easy to use. The project is built using HTML, CSS, and JavaScript, showcasing my skills in frontend development.
+                The calculator is responsive and works well on both desktop and mobile devices. Users can input numbers and operations using the buttons or their keyboard, and the result is displayed in real-time. This project demonstrates my ability to create interactive web applications and my understanding of JavaScript for handling user input and calculations.
+            </p>
+            <a href="calculator/calculator.html" target="_blank">
+                <button>Live Demo</button>
+            </a>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Brief description of the project... its a mini calendar. It is a simple web application that displays the current month, day, and year. The calendar is designed to be user-friendly and visually appealing, showcasing my skills in frontend development.
+                The project is built using HTML, CSS, and JavaScript, allowing users to view the current date easily. The calendar updates dynamically based on the user's system date, ensuring accuracy. This project demonstrates my ability to create interactive web applications and my understanding of JavaScript for handling date and time functionalities.
+            </p>
+            <a href="calendar/calendar.html" target="_blank">
+                <button>Live Demo</button>
+            </a>
+        </div>
+    </section>
+    
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Ahiwe Fredrick | Portfolio</p>
+    </footer>
+</body>
+</html>
+
+<button id="theme-toggle">Toggle Theme</button>
+<script src="script.js"></script>
+<script>
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    themeToggle.addEventListener('click', () => {
+        body.classList.toggle('dark-theme');
+        if (body.classList.contains('dark-theme')) {
+            themeToggle.textContent = 'Light Mode';
+        } else {
+            themeToggle.textContent = 'Dark Mode';
+        }
+    });
+</script>
